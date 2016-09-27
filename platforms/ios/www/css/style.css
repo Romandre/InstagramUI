@@ -1,0 +1,94 @@
+﻿/* Empty. Add your own CSS if you like */
+.Insta {
+    font-family: 'Pacifico', cursive;
+}
+
+button.icon.ion-ios-plus-outline {
+    font-size: 10px;
+}
+
+.item-avatar {
+    max-height: 30px;
+}
+
+.item-avatar > h2 {
+    position: relative;
+    top: -4px;
+    left: -10px;
+    font-size: 13px;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    color: black;
+    opacity: 1;
+}
+
+.item-body {
+    padding: 0;
+    opacity: 1;
+}
+.item-body > .full-image {
+    width: 100%;
+}
+
+.item .tabs {
+    margin-top:0;
+}
+
+.like-share-feild {
+    max-width: 28%;
+    margin-top: -12px;
+    padding: -5px;
+    z-index: -1;
+}
+
+.item p  {
+    color: black;
+}
+
+a.likes {
+    color: black;
+    text-decoration: none;
+}
+
+.tabs-striped 
+.tab-item.tab-item-active, 
+.tabs-striped .tab-item.active, 
+.tabs-striped .tab-item.activated {
+    margin-top: 0px;
+    border: none;
+}
+
+.profile ul {
+    list-style-type: none;
+}
+
+.imageholder {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+
+.profile li img {
+    float: left;
+    border: 5px solid #fff;
+    width: 30%;
+    height: 10%;
+    -webkit-transition: box-shadow 0.5s ease;
+    -moz-transition: box-shadow 0.5s ease;
+    -o-transition: box-shadow 0.5s ease;
+    -ms-transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.5s ease;
+}
+ 
+
+.profile li img:hover {
+    -webkit-box-shadow: 0px 0px 7px rgba(255, 255, 255,
+    0.9);
+    box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.9);
+}
