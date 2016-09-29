@@ -14,7 +14,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       if (cordova.platformId === "ios" && window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
       cordova.plugins.Keyboard.disableScroll(true);
-
     }
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
@@ -51,6 +50,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
   })
 
+  .state('tab.camera', {
+      url: '/camera',
+      views: {
+          'tab-camera': {
+              templateUrl: 'templates/tab-camera.html',
+              controller: 'DashCtrl'
+          }
+      }
+  })
+
   .state('tab.search', {
       url: '/search',
       views: {
@@ -61,18 +70,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
   })
   .state('tab.chats', {
-      url: '/chats',
+      url: '/dash/chats',
       views: {
-          'tab-chats': {
+          'tab-dash': {
               templateUrl: 'templates/tab-chats.html',
               controller: 'ChatsCtrl'
           }
       }
   })
     .state('tab.chat-detail', {
-        url: '/chats/:chatId',
+        url: '/dash/chats/:chatId',
         views: {
-            'tab-chats': {
+            'tab-dash': {
                 templateUrl: 'templates/chat-detail.html',
                 controller: 'ChatDetailCtrl'
             }
