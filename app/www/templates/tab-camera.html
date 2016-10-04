@@ -1,0 +1,23 @@
+<ion-view view-title="Camera">
+    <div class="bar bar-header bar-stable">
+        <a class="button button-icon">Back</a>
+        <h1 class="title">All photos</h1>
+    </div>       
+
+  <ion-content class="has-header"> 
+      <div class="center">
+          <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}"> 
+          <img ng-show="imgURI === undefined" ng-src="http://placehold.it/350x350">    
+      </div>      
+      <div class="bar bar-footer">
+          <div class="button-bar">
+              <a class="button" style="border:1px #d8d8d8 solid; border-right:none" ng-click="takePhoto()">
+                  Take Photo
+              </a>
+              <button class="button" style="border:1px #d8d8d8 solid" ng-click="choosePhoto()">
+                  Choose Photo
+              </button>    
+          </div>
+      </div>
+  </ion-content>
+</ion-view>
