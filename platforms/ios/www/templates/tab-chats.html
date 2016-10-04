@@ -1,12 +1,13 @@
-<ion-view view-title="Chats">
-  <ion-nav-bar>
-    <ion-nav-back-button>
-        <i class="ion-chevron-left"></i>
-    </ion-nav-back-button>
-  </ion-nav-bar>
+<ion-view>
+    <ion-nav-bar>
+        <ion-nav-back-button class="button-stable button-icon ion-chevron-left">            
+        </ion-nav-back-button>
+        <div class="title">Direct</div>
+        <a class="button button-icon ion-ios-filing" href="#/tab/dash/chats"></a>
+    </ion-nav-bar>    
   <ion-content>
     <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/dash/chats/{{chat.id}}">
         <img ng-src="{{chat.face}}">
         <h2>{{chat.name}}</h2>
         <p>{{chat.lastText}}</p>

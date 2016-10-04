@@ -3,6 +3,12 @@
     font-family: 'Pacifico', cursive;
 }
 
+.center {
+    display: block;
+    margin: auto;
+    text-align: center;
+    align-items: center
+}
 
 .item-avatar {
     max-height: 30px;

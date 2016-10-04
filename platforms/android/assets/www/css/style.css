@@ -3,10 +3,16 @@
     font-family: 'Pacifico', cursive;
 }
 
+.center {
+    display: block;
+    margin: auto;
+    text-align: center;
+    align-items: center
+}
 
 .item-avatar {
     max-height: 30px;
-    left: -6px;
+    margin-left: -10px;
 }
 
 .item-avatar > h2 {
@@ -55,6 +61,10 @@ a.likes {
 .nopad {
     padding: 0;
     margin: 0;
+}
+
+.noborder {
+    border: none;
 }
 
 .tabs-striped 

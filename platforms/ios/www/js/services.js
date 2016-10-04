@@ -6,7 +6,7 @@ angular.module('starter.services', [])
   // Some fake testing data
   var chats = [{
     id: 0,
-    name: 'Ben Sparrow',
+    name: 'Roman Kuch',
     lastText: 'You on your way?',
     face: 'img/ben.png'
   }, {
@@ -47,4 +47,35 @@ angular.module('starter.services', [])
       return null;
     }
   };
+})
+
+.factory('Accounts', function() {
+    // Might use a resource here that returns a JSON array
+
+    // Some fake testing data
+    var accounts = [{
+        id: 0,
+        name: 'roman.kucherenko',
+        face: 'img/ben.png'
+    }, {
+        id: 1,
+        name: 'somedude',
+        face: 'img/max.png'    
+    }];
+
+    return {
+        all: function() {
+            return accounts;
+        },
+        get: function(accountId) {
+            for (var i = 0; i < accounts.length; i++) {
+                if (accounts[i].id === parseInt(accountId)) {
+                    return accounts[i];
+                }
+            }
+            return null;
+        }
+    };
 });
+
+
