@@ -1,0 +1,18 @@
+<ion-view view-title="Camera">
+    <div class="bar bar-header bar-stable">
+        <a class="button button-icon">Cancel</a>
+        <h1 class="title">All photos</h1>
+        <a class="button button-icon">Next</a>
+    </div>
+  <ion-content class="has-header">
+      <button class="button button-full button-positive" ng-click="takePhoto()">
+          Take Photo
+      </button>
+      <button class="button button-full button-assertive" ng-click="choosePhoto()">
+          Choose Photo
+      </button><br />
+      Image will be here:
+      <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}">
+      <img ng-show="imgURI === undefined" ng-src="http://placehold.it/300x300">
+  </ion-content>
+</ion-view>
