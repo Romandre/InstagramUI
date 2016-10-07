@@ -49,33 +49,29 @@ angular.module('starter.services', [])
   };
 })
 
-.factory('Accounts', function() {
-    // Might use a resource here that returns a JSON array
-
-    // Some fake testing data
-    var accounts = [{
+.factory('Posts', function () {
+    // Post Data
+    var posts = [{
         id: 0,
         name: 'roman.kucherenko',
-        face: 'img/ben.png'
-    }, {
-        id: 1,
-        name: 'somedude',
-        face: 'img/max.png'    
+        avatar: 'img/avatar.jpg',
+        image: 'img/landscape.jpg',        
+        comment: 'Beautiful view!',
+        likes: 53
     }];
 
     return {
-        all: function() {
-            return accounts;
+        all: function () {
+            return posts;
         },
-        get: function(accountId) {
-            for (var i = 0; i < accounts.length; i++) {
-                if (accounts[i].id === parseInt(accountId)) {
-                    return accounts[i];
+        share: function (newdata) {
+            posts.unshift(newdata);
+            for (var i = 0; i < posts.length; i++) {
+                if (posts[i].id === parseInt(newdata)) {
+                    return posts[i];
                 }
             }
-            return null;
         }
     };
 });
-
 

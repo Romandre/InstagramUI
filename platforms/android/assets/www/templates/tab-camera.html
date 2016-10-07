@@ -1,13 +1,14 @@
 <ion-view view-title="Camera">
     <div class="bar bar-header bar-stable">
-        <a class="button button-icon">Back</a>
+        <a class="button button-icon" href="#/tab/home">Back</a>
         <h1 class="title">All photos</h1>
+        <a class="button button-icon" href="#/tab/camera/confirm">Next</a>
     </div>       
 
   <ion-content class="has-header"> 
       <div class="center">
-          <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}" style="max-width:100%;max-height:450px;"> 
           <img ng-show="imgURI === undefined" ng-src="http://placehold.it/350x350">    
+          <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}" style="max-width:100%;max-height:400px;">           
       </div>      
       <div class="bar bar-footer">
           <div class="button-bar">

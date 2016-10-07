@@ -22,6 +22,13 @@
     font-size: 13px;
 }
 
+.more {
+    position: relative;
+    float: right;
+    top: -30px;
+    color: black;
+}
+
 .list {
     padding: 0;
     margin: 0;
@@ -105,4 +112,42 @@ a.likes {
     -webkit-box-shadow: 0px 0px 7px rgba(255, 255, 255,
     0.9);
     box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.9);
+}
+
+.platform-android .action-sheet .action-sheet-title, .platform-android .action-sheet .button {
+  text-align: center;
+  border-color: transparent;
+  font-size: 20px;
+  color: inherit;     
+  border: 1px solid #e6e6e6;
+}
+.action-sheet-group {
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+.action-sheet .button {
+  display: block;
+  padding: 1px;
+  width: 100%;
+  border-radius: 0;
+  border-color: #d1d3d6;
+  background-color: transparent;
+  color: #808080;
+  text-align: center;
+  border: 1px solid black;
+}
+.platform-android .action-sheet-cancel {
+    display: block !important;
+    color: red;
+}
+
+
+body.bar-subheader-slide-away.bar-header {
+    top: 0;
+}
+body.bar-subheader-slide-away.has-header {
+    top: 44px;
 }

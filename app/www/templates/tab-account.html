@@ -11,7 +11,7 @@
       </ion-item>-->
       <ion-item class="nopad">          
           <div class="row nopad">
-              <div class="col col-25"><img src="https://pp.vk.me/c623920/v623920938/17e6e/MhSYvmRLBiU.jpg" width="68" height="68" style="border-radius:50%" /></div>
+              <div class="col col-25"><img src="img/avatar.jpg" width="68" height="68" style="border-radius:50%" /></div>
               <div class="col col-75">
                   <div class="row" style="text-align: center; line-height:90%">
                       <div class="col">
@@ -27,8 +27,14 @@
                   <button button-stable style="width:100%; border:none">Edit profile</button>     
               </div>
           </div>
-
           <p>Some text here</p>
       </ion-item>
+      <div>
+          <div class="row">
+              <div class="col-33" ng-repeat="post in posts">
+                  <img class="full-image" ng-src="{{post.image}}"> 
+              </div>              
+          </div>
+      </div>
   </ion-content>
 </ion-view>
